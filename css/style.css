@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f3eae3;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: flex;
+    margin-top: 50px;
+    width: 600px;
+    height: 420px;
+    background-color: #FFF;
+    border-radius: 10px;
+
+}
+.left {
+    flex: 1;
+    background-image: url('/product-preview-card-component-main/images/image-product-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    height: inherit;
+    border-radius: 10px 0 0 10px;
+}
+.right {
+    flex: 1;
+    height: inherit;
+    padding-left: 40px;
+    padding-top: 20px;
+    background-color: #fff;
+}
+
+/* Textos da direita */
+h2 {
+    font-weight: 100;
+    font-size: 15px;
+    padding: 10px 0px;
+    color: #444;
+}
+h1 {
+    padding-bottom: 15px;
+    font-family: 'Yeseva One', 'cursive', Arial, Helvetica, sans-serif;
+
+}
+h3 {
+    font-size: 14px;
+    line-height: 25px;
+    padding-bottom: 15px;
+    font-weight: 200;
+    color: #555;
+}
+.prices {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: 600;
+    color: #3c8268;
+    margin-right: 20px;
+    font-family: 'Yeseva One', 'cursive', Arial, Helvetica, sans-serif;
+}
+span {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #555;
+}
+
+button {
+    background-color: #3c8268;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+    width: 250px;
+}
+svg {
+    margin-right: 5px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        display: block;
+        width: 380px;
+        padding-bottom: 50px;
+    }
+    .left {
+        background-image: url(/product-preview-card-component-main/images/image-product-mobile.jpg);
+        border-radius: 10px 10px 0 0;
+        height: 300px;
+    }
+}
